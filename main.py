@@ -32,6 +32,7 @@ def validate(text: str) -> None:
     assert text == text.strip()
     assert text[-1] in ".!?"
     assert "  " not in text
+    assert "\t" not in text, "gate: no tab characters"
 
 
 def main() -> None:
